@@ -9,8 +9,9 @@ class DataList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [for (var i = 0; i < size; i++) DataItem(i)],
+    return ListView.builder(
+      itemBuilder: (context, i) => DataItem(i),
+      itemCount: size,
     );
   }
 }
