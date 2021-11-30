@@ -52,6 +52,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  static const maxSize = 1000;
   int size = 0;
   Random random = Random();
 
@@ -80,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: DataList(size),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => _refresh(1000 + random.nextInt(10)),
+        onPressed: () => _refresh(maxSize + random.nextInt(10)),
         tooltip: 'Refresh',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
