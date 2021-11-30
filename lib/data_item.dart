@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class DataItem extends StatefulWidget {
-  const DataItem(this.index, {Key? key}) : super(key: key);
+  DataItem(this.index, {Key? key}) : super(key: key);
 
   final int index;
+  final fakeData = List.generate(10000, (index) => index);
 
   @override
   State<DataItem> createState() => _DataItemState();
