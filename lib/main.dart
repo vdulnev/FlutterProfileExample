@@ -68,11 +68,16 @@ class _MyHomePageState extends State<MyHomePage> {
         // in the middle of the parent.
         child: Row(
           children: const [
-            Text(
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sapien quis velit luctus eleifend. Nulla pharetra cursus sagittis.',
+            Flexible(
+              child: Text(
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sapien quis velit luctus eleifend. Nulla pharetra cursus sagittis.',
+              ),
             ),
-            Text(
-                'Sed leo mauris, posuere non ultrices eget, lacinia vel nunc. Praesent sed suscipit lorem. Maecenas commodo, magna fringilla sodales laoreet, diam est ullamcorper nulla, eu molestie odio velit non dolor.')
+            Flexible(
+              child: Text(
+                  'Sed leo mauris, posuere non ultrices eget, lacinia vel nunc. Praesent sed suscipit lorem. Maecenas commodo, magna fringilla sodales laoreet, diam est ullamcorper nulla, eu molestie odio velit non dolor.'),
+              flex: 3,
+            ),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
