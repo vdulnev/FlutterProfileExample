@@ -66,19 +66,25 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Row(
-          children: const [
-            Flexible(
-              child: Text(
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sapien quis velit luctus eleifend. Nulla pharetra cursus sagittis.',
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Row(
+            children: const [
+              Flexible(
+                child: Padding(
+                  padding: EdgeInsets.only(right: 8.0),
+                  child: Text(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in sapien quis velit luctus eleifend. Nulla pharetra cursus sagittis.',
+                  ),
+                ),
               ),
-            ),
-            Flexible(
-              child: Text(
-                  'Sed leo mauris, posuere non ultrices eget, lacinia vel nunc. Praesent sed suscipit lorem. Maecenas commodo, magna fringilla sodales laoreet, diam est ullamcorper nulla, eu molestie odio velit non dolor.'),
-              flex: 3,
-            ),
-          ],
+              Flexible(
+                child: Text(
+                    'Sed leo mauris, posuere non ultrices eget, lacinia vel nunc. Praesent sed suscipit lorem. Maecenas commodo, magna fringilla sodales laoreet, diam est ullamcorper nulla, eu molestie odio velit non dolor.'),
+                flex: 3,
+              ),
+            ],
+          ),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
