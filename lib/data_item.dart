@@ -7,6 +7,7 @@ class DataItem extends StatefulWidget {
   }
 
   final int index;
+  final fakeData = List.generate(10000, (index) => index);
 
   @override
   State<DataItem> createState() => _DataItemState();
