@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class DataItem extends StatefulWidget {
-  const DataItem(this.index, {Key? key}) : super(key: key);
+  DataItem(this.index, {Key? key}) : super(key: key) {
+    print('creating list item $index');
+  }
 
   final int index;
 
